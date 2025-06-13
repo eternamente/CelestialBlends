@@ -33,7 +33,31 @@
 | He lum (Lsun)      | Luminosity from helium burning                                                              | Solar luminosities      |
 
 ## EEP (Equivalent Evolutionary Point)
+sourse: https://www.aanda.org/articles/aa/full_html/2021/03/aa39357-20/T2.html
+### Correspondance between equivalent evolutionary points (EEPs) and stellar evolutionary phase
+| EEP  | Phase                                | Abbreviation |
+|------|--------------------------------------|--------------|
+| 1    | Pre-main sequence                    | PMS          |
+| 202  | Zero age main sequence               | ZAMS         |
+| 353  | Intermediate age main sequence       | IAMS         |
+| 454  | Terminal age main sequence           | TAMS         |
+| 605  | Tip of the red giant branch          | RGBTip       |
+| 631  | Zero age core helium burning         | ZACHeB       |
+| 707  | Terminal age core helium burning     | TACHeB       |
 
+## Directory grids example
+Downloads from zendo, example: https://zenodo.org/record/{record_id}/files/yrec_eep.tar.gz
+~/.kiauhoku/grids/
+├── yrec/
+│   ├── yrec_eep.pqt         
+│   ├── yrec_interpolator.pkl  
+│   └── yrec_eep_params.pkl   # EEP params
+├── mist/
+│   ├── mist_eep.pqt
+│   ├── mist_interpolator.pkl
+│   └── mist_eep_params.pkl
+├── dartmouth/
+└── garstec/
 
 
 
