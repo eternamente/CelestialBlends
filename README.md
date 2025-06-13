@@ -47,6 +47,7 @@ sourse: https://www.aanda.org/articles/aa/full_html/2021/03/aa39357-20/T2.html
 
 ## Directory grids example
 Downloads from zendo, example: https://zenodo.org/record/{record_id}/files/yrec_eep.tar.gz
+```
 ~/.kiauhoku/grids/
 ├── yrec/
 │   ├── yrec_eep.pqt         
@@ -58,6 +59,6 @@ Downloads from zendo, example: https://zenodo.org/record/{record_id}/files/yrec_
 │   └── mist_eep_params.pkl
 ├── dartmouth/
 └── garstec/
-
+```
 
 
