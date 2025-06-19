@@ -75,13 +75,13 @@
 
 | Grid Name    | Full Name                           | Dimensions | Index Parameters              | Key Features                    | Reference                | Reference/Notes                                           |
 |--------------|-------------------------------------|------------|-------------------------------|--------------------------------|--------------------------|----------------------------------------------------------|
-| mist         | MESA Isochrones & Stellar Tracks    | 3D         | mass, metallicity, eep        | Modern MESA models, detailed    | Choi et al. (2016)       | Solar-scaled, single stars                               |
-| yrec         | Yale Rotating Evolution Code        | 4D         | mass, metallicity, alpha, eep | Rotation effects, magnetic braking | Spada et al. (2013)    | Rotational/magnetic versions exist                      |
+| **mist**         | MESA Isochrones & Stellar Tracks    | 3D         | mass, metallicity, eep        | Modern MESA models, detailed    | Choi et al. (2016)       | Solar-scaled, single stars                               |
+| **yrec**         | Yale Rotating Evolution Code        | 4D         | mass, metallicity, alpha, eep | Rotation effects, magnetic braking | Spada et al. (2013)    | Rotational/magnetic versions exist                      |
 | **dartmouth**| Dartmouth Stellar Evolution         | 3D         | mass, metallicity, eep        | Classic grid, well-tested       | Dotter et al. (2008)     | Well-tested for low-mass stars                          |
-| garstec      | Garching Stellar Evolution Code     | 3D         | mass, metallicity, eep        | Convective overshooting         | Weiss (1987)             | Grid for various [Fe/H]                                 |
+| **garstec**      | Garching Stellar Evolution Code     | 3D         | mass, metallicity, eep        | Convective overshooting         | Weiss (1987)             | Grid for various [Fe/H]                                 |
 | **fastlaunch**| Rotating models (fast rotation)    | 4D         | mass, metallicity, alpha, eep | Gyrochronology, rotation        | Claytor et al. (2020)    | For rotation, with α-enhancement                        |
 | **slowlaunch**| Rotating models (slow rotation)    | 4D         | mass, metallicity, alpha, eep | Gyrochronology, rotation        | Claytor et al. (2020)    | Like fastlaunch, for slow rotators                      |
-| rocrit       | Rotation at critical velocity       | 4D         | mass, metallicity, alpha, eep | Critical rotation effects       | Claytor et al. (2020)    | For rotation, magnetic effects                          |
+| **rocrit**       | Rotation at critical velocity       | 4D         | mass, metallicity, alpha, eep | Critical rotation effects       | Claytor et al. (2020)    | For rotation, magnetic effects                          |
 
 ## EEP (Equivalent Evolutionary Point)
 sourse: https://www.aanda.org/articles/aa/full_html/2021/03/aa39357-20/T2.html
