@@ -1,4 +1,4 @@
-## kiauhoku params
+## kiauhoku output params
 | Parameter          | Description                                                                                  | Units                   |
 |--------------------|---------------------------------------------------------------------------------------------|-------------------------|
 | Age(Gyr)           | Stellar age                                                                                 | Gigayears (Gyr)         |
@@ -61,4 +61,35 @@ Downloads from zendo, example: https://zenodo.org/record/{record_id}/files/yrec_
 └── garstec/
 ```
 
+## ARIADNE input parameters
 
+| Parameter      | Description                                         | Units / Example             |
+|----------------|-----------------------------------------------------|-----------------------------|
+| starname       | Star identifier/name                                | string (exampe, WASP-19)    |
+| ra             | Right Ascension (J2000)                             | degrees                     |
+| dec            | Declination (J2000)                                 | degrees                     |
+| g_id           | Gaia ID (optional, for auto-photometry)             | -                           |
+| photometry     | Photometric bands + magnitudes (+errors)            | example, V=10.34, err=0.03  |
+| filters        | List of bands (if not auto)                         | example ['V', 'J', 'K']     |
+| distance/parallax | Distance (pc) or Gaia parallax (mas & error)     | pc / mas                    |
+| Av             | Extinction                                          | mag                         |
+| metallicity (z)| Metallicity [Fe/H]                                  | dex                         |
+| priors         | Priors on parameters (optional, advanced)           | ('default'), or custom      |
+
+## ARIADNE output parameters
+
+| Parameter    | Description                                          | Units                    |
+|--------------|------------------------------------------------------|--------------------------|
+| teff         | Effective temperature                                | K                        |
+| logg         | Surface gravity (log10)                              | log(cm/s²)               |
+| z            | Metallicity [Fe/H]                                   | dex                      |
+| radius       | Stellar radius                                       | R☉                       |
+| distance     | Distance (if not fixed)                              | pc                       |
+| norm         | Normalization factor (if normalization mode used)    | -                        |
+| Av           | Extinction                                           | mag                      |
+| lum          | Stellar luminosity                                   | L☉                       |
+| best_fit     | Best-fit parameters and uncertainties                | -                        |
+| model_sed    | Synthetic SED (array, optionally saved to .dat)      | -                        |
+| posteriors   | Posterior samples (arrays for each param)            | -                        |
+| chain_plots  | MCMC trace/corner/posterior/HR histograms (figures)  | -                        |
+| IR excess    | IR-excess indication/plot (if enabled)               | -                        |
