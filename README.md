@@ -1,7 +1,8 @@
 # kiauhoku
 [git link](https://github.com/zclaytor/kiauhoku)
 
-## kiauhoku input params
+
+## kiauhoku Input Parameters
 
 | Parameter        | Description                                    | Units/Type               | Required |
 |------------------|------------------------------------------------|-------------------------|----------|
@@ -12,16 +13,14 @@
 | eep              | Equivalent Evolutionary Point index            | int (201-950)           | yes*     |
 | age              | Stellar age (alternative to EEP)               |  Gyr, float             |yes*     |
 | star_dict        | Dictionary of observed parameters for fitting   | dict                    | for fitting |
-| observed_errors  | Dictionary of parameter uncertainties          | dict                    | for fitting |
+| observed_errors?  | Dictionary of parameter uncertainties          | dict                    | for fitting |
 | scale            | Scale factors for fitting optimization         | dict                    | optional |
 | guess_width      | Width of initial guess distribution            | tuple                   | for mcmc |
 | n_walkers        | Number of MCMC walkers                         | int                     | for mcmc |
 | n_burnin         | Number of burn-in steps                        | int                     | for mcmc |
 | n_iter           | Number of MCMC iterations                      | int                     | for mcmc |
 | tol              | Tolerance for fitting convergence              | float                   | for fitting |
-| method           | Optimization method                            | string                  | for fitting |
 | loss             | Loss function type                             | string                  | for fitting |
-| filters          | List of photometric filters for model SED      | list of str (e.g., 'V') | optional |
 
 *Either `eep` or `age` is required, not both
 
