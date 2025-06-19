@@ -1,5 +1,30 @@
 # kiauhoku
 [git link](https://github.com/zclaytor/kiauhoku)
+
+## kiauhoku input params
+
+| Parameter        | Description                                    | Units/Type               | Required |
+|------------------|------------------------------------------------|-------------------------|----------|
+| grid_name        | Name of stellar model grid                     | string                  | yes      |
+| initial_mass     | Initial stellar mass                           | M☉ (0.1-100 M☉), float      |  yes      |
+| initial_met      | Initial metallicity [Fe/H]                     | dex (-4.0 to +1.0), float    | yes      |
+| initial_alpha    | Initial alpha-enhancement [α/Fe]               | dex (-0.2 to +0.8), float    | for grids with α |
+| eep              | Equivalent Evolutionary Point index            | int (201-950)           | yes*     |
+| age              | Stellar age (alternative to EEP)               |  Gyr, float             |yes*     |
+| star_dict        | Dictionary of observed parameters for fitting   | dict                    | for fitting |
+| observed_errors  | Dictionary of parameter uncertainties          | dict                    | for fitting |
+| scale            | Scale factors for fitting optimization         | dict                    | optional |
+| guess_width      | Width of initial guess distribution            | tuple                   | for mcmc |
+| n_walkers        | Number of MCMC walkers                         | int                     | for mcmc |
+| n_burnin         | Number of burn-in steps                        | int                     | for mcmc |
+| n_iter           | Number of MCMC iterations                      | int                     | for mcmc |
+| tol              | Tolerance for fitting convergence              | float                   | for fitting |
+| method           | Optimization method                            | string                  | for fitting |
+| loss             | Loss function type                             | string                  | for fitting |
+| filters          | List of photometric filters for model SED      | list of str (e.g., 'V') | optional |
+
+*Either `eep` or `age` is required, not both
+
 ## kiauhoku output params for fastlaunch grid
 | Parameter          | Description                                                                                  | Units                   |
 |--------------------|---------------------------------------------------------------------------------------------|-------------------------|
@@ -74,7 +99,7 @@
 ## All grids in kiauhoku
 source link: (zenodo)[https://zenodo.org/records/11264222]
 
-| Grid Name    | Full Name                           | Dimensions | Index Parameters              | Key Features                    | Reference                | Reference/Notes                                           |
+| Grid Name    | Full Name                           | Dimensions | Index Parameters              | Key Features                    | Reference                | Notes                                           |
 |--------------|-------------------------------------|------------|-------------------------------|--------------------------------|--------------------------|----------------------------------------------------------|
 | **mist**         | MESA Isochrones & Stellar Tracks    | 3D         | mass, metallicity, eep        | Modern MESA models, detailed    | Choi et al. (2016)       | Solar-scaled, single stars                               |
 | **yrec**         | Yale Rotating Evolution Code        | 4D         | mass, metallicity, alpha, eep | Rotation effects, magnetic braking | Spada et al. (2013)    | Rotational/magnetic versions exist                      |
