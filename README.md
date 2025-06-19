@@ -72,6 +72,7 @@
 | phase                     | Evolutionary phase index                           | -                  |
 
 ## All grids in kiauhoku
+source link: (zenodo)[https://zenodo.org/records/11264222]
 
 | Grid Name    | Full Name                           | Dimensions | Index Parameters              | Key Features                    | Reference                | Reference/Notes                                           |
 |--------------|-------------------------------------|------------|-------------------------------|--------------------------------|--------------------------|----------------------------------------------------------|
